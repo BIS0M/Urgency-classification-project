@@ -1,6 +1,4 @@
-https://drive.google.com/file/d/19jOe4G5t\_ynDwTKmf09oOJjbd4gdd2ft/view?usp=drive\_link
-
-
+https://kio.ac/c/dK8M_6sC__IN12nPQC35Ob
 Model Download
 
 
