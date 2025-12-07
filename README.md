@@ -1,8 +1,8 @@
-https://drive.google.com/file/d/19jOe4G5t\_ynDwTKmf09oOJjbd4gdd2ft/view?usp=drive\_link
+https://kio.ac/c/bUb6XvmMw1Ts59El2b9POb
 
 
 
-Model Download
+Model Download _v4
 
 
 
@@ -16,7 +16,8 @@ weight\_decay=0.01
 
 Warmup Steps : 50
 
-weights:0:1:2 = 1.0:1.5:5.0
+weights:0:1:2 = 1.0:1.5:7.0
 
+긴급에 해당되는 데이터 43개 추가 후 학습.
 
 
