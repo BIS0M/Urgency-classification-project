@@ -21,10 +21,10 @@ from transformers import (
 # 1. 설정값 (Configuration)
 # ==========================================
 # 학습에 사용할 데이터 파일명
-CSV_PATH = "final_result_kookje.csv" #경로수정해야함
+CSV_PATH = "training\\final_result_plus_v2.csv" #경로수정해야함
 
 # 모델이 저장될 폴더명
-OUTPUT_DIR = "./urgency_model_focal_v2kj"
+OUTPUT_DIR = "./urgency_model_focal_v4"
 
 MODEL_NAME = "klue/bert-base"   # 한국어 성능이 좋은 KLUE-BERT
 NUM_LABELS = 3                  # 0:일반, 1:중간, 2:긴급
@@ -77,7 +77,7 @@ class AdvancedTrainer(Trainer):
         # 2(긴급): 5.0 (매우 중요! 틀리면 벌점 5배)
         # -> 긴급을 자꾸 놓치면 5.0을 7.0, 10.0으로 더 올리세요.
         # -----------------------------------------------------------
-        weights = torch.tensor([1.0, 1.5, 5.0], dtype=torch.float32)
+        weights = torch.tensor([1.0, 1.5, 7.0], dtype=torch.float32)
         
         if torch.cuda.is_available():
             self.class_weights = weights.cuda()
