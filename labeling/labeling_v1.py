@@ -1,10 +1,11 @@
+import os
 import pandas as pd
 from kiwipiepy import Kiwi
 
 # ---------------------------------------------------------
 # 1. 데이터 로드
 # ---------------------------------------------------------
-filename = 'final_result_with_campus.csv'
+filename = os.path.join('data', 'final_result_with_campus_kookje.csv')
 try:
     df = pd.read_csv(filename)
 except FileNotFoundError:

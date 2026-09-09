@@ -21,7 +21,7 @@ from transformers import (
 # 1. 설정값 (Configuration)
 # ==========================================
 # 학습에 사용할 데이터 파일명
-CSV_PATH = "training\\final_result_plus_v2.csv" #경로수정해야함
+CSV_PATH = os.path.join("trainingset", "final_result_plus_v2.csv")
 
 # 모델이 저장될 폴더명
 OUTPUT_DIR = "./urgency_model_focal_v4"

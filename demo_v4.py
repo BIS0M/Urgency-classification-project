@@ -12,7 +12,7 @@ import time
 # ==========================================
 MODEL_PATH = "./urgency_model_focal_v4"
 DB_FILE = "complaints_db.csv"
-ADMIN_PASSWORD = "admin"
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "admin")  # 배포 시 환경변수로 반드시 재설정
 
 st.set_page_config(page_title="민원 분류 시스템", layout="wide")
 

@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader, Dataset
 # 1. 설정값 (Configuration)
 # ==========================================
 MODEL_PATH = "./urgency_model_focal_v4"  # 학습된 모델 경로
-DATA_PATH = "final_result_plus_v2.csv"  # 데이터 파일
+DATA_PATH = os.path.join("trainingset", "final_result_plus_v2.csv")  # 데이터 파일
 BATCH_SIZE = 16
 
 # 라벨 이름 (0, 1, 2 순서대로)

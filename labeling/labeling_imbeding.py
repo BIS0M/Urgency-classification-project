@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from kiwipiepy import Kiwi
 from sentence_transformers import SentenceTransformer, util
@@ -5,7 +6,7 @@ from sentence_transformers import SentenceTransformer, util
 # ---------------------------------------------------------
 # 1. 설정 및 로드
 # ---------------------------------------------------------
-filename = 'final_result_with_campus_kookje.csv'
+filename = os.path.join('data', 'final_result_with_campus_kookje.csv')
 try:
     df = pd.read_csv(filename)
 except FileNotFoundError:
